@@ -3,7 +3,7 @@
 A Node.js + PostgreSQL backend to track baggage scan events in an airport system in real-time.
 
 
-![Baggage Tracking Demo](./image copy.png)
+![Baggage Tracking Demo](./image_copy.png)
 ![Baggage Tracking Demo](./image.png)
 ---
 
