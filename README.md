@@ -45,7 +45,6 @@ cd baggage-tracking-api
   "destination_gate": "A5",
   "location_scanned": "Sorter_1"
 }
-
 ```
 
 **Response**
@@ -55,7 +54,6 @@ cd baggage-tracking-api
   "scan_internal_id": 1,
   "status": "logged"
 }
-
 ```
 
 ### ✅ GET /baggage/scans/bag/:bag_tag_id
@@ -64,8 +62,6 @@ cd baggage-tracking-api
 
 ```bash
 GET /baggage/scans/bag/BAG001
-
-
 ```
 
 **Response**
@@ -81,8 +77,6 @@ GET /baggage/scans/bag/BAG001
   },
   ...
 ]
-
-
 ```
 
 ### ✅ GET /baggage/scans/bag/:bag_tag_id?latest=true
@@ -91,9 +85,6 @@ GET /baggage/scans/bag/BAG001
 
 ```bash
 GET /baggage/scans/bag/BAG001?latest=true
-
-
-
 ```
 
 **Response**
@@ -106,9 +97,6 @@ GET /baggage/scans/bag/BAG001?latest=true
   "location_scanned": "Belt_1",
   "scanned_at": "2025-07-19T10:45:00.000Z"
 }
-
-
-
 ```
 
 ### ✅ GET /baggage/scans/gate/:destination_gate
@@ -117,10 +105,6 @@ GET /baggage/scans/bag/BAG001?latest=true
 
 ```bash
 GET /baggage/scans/gate/A5
-
-
-
-
 ```
 
 **Response**
@@ -136,10 +120,6 @@ GET /baggage/scans/gate/A5
   },
   ...
 ]
-
-
-
-
 ```
 
 ### ✅ GET /baggage/active/gate/:destination_gate?since_minutes=N
@@ -148,11 +128,6 @@ GET /baggage/scans/gate/A5
 
 ```bash
 GET /baggage/active/gate/A5?since_minutes=30
-
-
-
-
-
 ```
 
 **Response**
@@ -166,11 +141,6 @@ GET /baggage/active/gate/A5?since_minutes=30
   },
   ...
 ]
-
-
-
-
-
 ```
 
 ### ✅ GET /baggage/stats/gate-counts?since_minutes=N
@@ -179,12 +149,6 @@ GET /baggage/active/gate/A5?since_minutes=30
 
 ```bash
 GET /baggage/stats/gate-counts?since_minutes=60
-
-
-
-
-
-
 ```
 
 **Response**
@@ -200,10 +164,4 @@ GET /baggage/stats/gate-counts?since_minutes=60
     "unique_bag_count": 2
   }
 ]
-
-
-
-
-
-
 ```
